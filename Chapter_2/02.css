@@ -1,5 +1,5 @@
 .horizontal {
     float: left;
-    list-style: none;
+    list-style: none; // 移除项目编号
     margin: 10px
 }
