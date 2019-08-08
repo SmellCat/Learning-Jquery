@@ -3,3 +3,41 @@
     list-style: none; // 移除项目编号
     margin: 10px
 }
+
+.sub-level {
+    background: #ccc
+}
+
+a {
+    color: #00c;
+}
+
+a.mailto {
+    background: url(images/email.png) no-repeat right top;
+    padding-right: 18px;
+}
+
+a.pdflink {
+    background: url(images/pdf.png) no-repeat right top;
+    padding-right: 18px;
+}
+
+a.henrylink {
+    background-color: #fff;
+    padding: 2px;
+    border: 1px solid #000;
+}
+h2 {
+    clear: left; //  清除left浮动，否则Shakespeares Plays也在左边浮着
+}
+tr {
+    background-color: #fff;
+}
+
+.alt {
+    background-color: #ccc;
+}
+th, td {
+    text-align: left;
+    padding: 2px 4px;
+}
