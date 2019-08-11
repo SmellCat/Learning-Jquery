@@ -26,3 +26,15 @@ JQuery(function($) {
     // 使用$ 的代码
 });
 ```
+####3、CSS知识补充学习
+1. float clear 
+https://www.cnblogs.com/zfquan/p/7793945.html
+
+2. px em解释
+https://www.cnblogs.com/wuguoyuan/p/rem.html
+
+####4、利用事件处理程序的上下文
+当触发任何事件处理程序时，关键字**this**引用的都是携带相应行为的DOM元素
+
+
+
