@@ -1,0 +1,104 @@
+/***************************************
+   Default Styles
+************************************** */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+    color: #000;
+    background: #fff;
+}
+#container {
+    font-size: 1.2em;
+    margin: 10px 2em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+a {
+    color: #06581f;
+}
+
+/*************************
+    自定义CSS
+**************************/
+#first {
+
+}
+
+#container h3 {
+    margin-bottom: .5em
+}
+
+.div1,.div2,.div3,.div4 {
+    border: 1px solid black;
+}
+
+/*#container .div1,*/
+            /*.div3{*/
+    /*border: 1px solid black;*/
+/*}*/
+
+.div1 {
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
+.div2 {
+    width: 400px;
+    height: 50px;
+    background: #4cff2e;
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+.div4 {
+    width: 300px;
+    height: 70px;
+    background: deepskyblue;
+}
+
+/*#second .div2 {*/
+    /*float: left;*/
+/*}*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}

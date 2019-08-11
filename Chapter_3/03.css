@@ -1,0 +1,68 @@
+/***************************************
+   Default Styles
+************************************** */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/*
+    转载自： https://www.cnblogs.com/wuguoyuan/p/rem.html
+    px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。(引自CSS2.0手册)
+    em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。(引自CSS2.0手册)
+*/
+body {
+    font: 62.5% Verdana, Helvetica, Arial, sans-serif; /* 任意浏览器的默认字体高都是16px。所以未经调整的浏览器都符合：1em=16px。 62.5% => 16px*62.5% = 10px */
+    color: #000;
+    background: #fff;
+}
+#container {
+    font-size: 1.2em;  /* 继承body的em，1.2em = 1.2 * 10px = 12px */
+    margin: 10px 2em;  /* font-size 是1.2em，故此处magin-left和margin-right为24px */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+a {
+    color: #06581f;
+}
+
+
+/***************************************
+   Chapter Styles
+************************************** */
+
+.switcher {
+    float: right;
+    background-color: #ddd;
+    border: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+    font-size: .9em;
+}
+.switcher h3 {
+    margin: .5em 0;
+}
+.chapter {
+    margin: 1em
+}
+
+#header {
+    clear: both;
+}
