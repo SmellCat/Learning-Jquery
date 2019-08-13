@@ -82,3 +82,14 @@ body.narrow .chapter {
 .hidden {
     display: none;
 }
+
+.hover {
+    cursor: pointer;
+    background-color: #afa;
+}
+
+
+/*  :hover伪类选择符实现
+#switcher h3:hover{*/
+    /*background: #afa;*/
+/*}*/

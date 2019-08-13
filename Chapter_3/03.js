@@ -81,18 +81,129 @@
 /*
     因为上下文关键字this引用的是DOM元素，而不是JQuery对象，所以可以使用原生DOM属性来确定被单击元素的ID
 * */
+// $(document).ready(function() {
+//    $('#switcher-default').addClass('selected');
+//    $('#switcher button').on('click', function() { // .on('click', function(){}) 的简写事件方式，是.click(function() {})
+//        let bodyClass = this.id.split('-')[1];
+//        $('body').removeClass().addClass(bodyClass);
+//        $('#switcher button').removeClass('selected');
+//        $(this).addClass('selected');
+//    });
+// });
+
+// $(document).ready(function() {
+//     $('#switcher h3').click(() => {
+//         $('#switcher button').toggleClass('hidden');
+//     });
+// });
+
+// $(document).ready(function() {
+//    $('#switcher h3').hover(function() {
+//        $(this).addClass('hover');
+//    }, function() {
+//        $(this).removeClass('hover')
+//    });
+// });
+
+//  因为 事件冒泡 会导致点击按钮时，而触发这个事件
+// $(document).ready(function() {
+//     $('#switcher').click(function() {  //
+//         $('#switcher button').toggleClass('hidden');
+//     });
+// });
+
+// $(document).ready(function() {
+//     $('#switcher').click(function(event) {
+//         if (event.target == this) {
+//             $('#switcher button').toggleClass('hidden');
+//         }
+//     })
+// });
+
+// $(document).ready(function() {
+//     $('#switcher-default').addClass('selected');
+//     $('#switcher button').click(function(event) {
+//        let bodyClass = this.id.split('-')[1];
+//        $('body').removeClass().addClass(bodyClass);
+//        $('#switcher button').removeClass('selected');
+//        $(this).addClass('selected');
+//        event.stopPropagation(); // 停止事件传播
+//     });
+// });
+
+// $(document).ready(function() {
+//     $('#switcher-default').addClass('selected');
+//     $('#switcher').click(function(event) {
+//         if ($(event.target).is('button')) {
+//             let bodyClass = event.target.id.split('-')[1];
+//             $('body').removeClass().addClass(bodyClass);
+//             $('#switcher button').removeClass('selected');
+//             $(event.target).addClass('selected');
+//             event.stopPropagation();  // 在此处没有效果
+//         }
+//     });
+// });
+
+/*
 $(document).ready(function() {
-   $('#switcher-default').addClass('selected');
-   $('#switcher button').on('click', function() { // .on('click', function(){}) 的简写事件方式，是.click(function() {})
-       let bodyClass = this.id.split('-')[1];
-       $('body').removeClass().addClass(bodyClass);
-       $('#switcher button').removeClass('selected');
-       $(this).addClass('selected');
-   });
+    $('#switcher').hover(function() {
+        $(this).addClass('hover');
+    }, function() {
+        $(this).removeClass('hover');
+    });
 });
 
 $(document).ready(function() {
-    $('#switcher h3').click(() => {
-        $('#switcher button').toggleClass('hidden');
+    $('#switcher').click(function(event) {
+        if (!$(event.target).is('button')) {
+            $('#switcher button').toggleClass('hidden');
+        }
+    })
+});
+
+$(document).ready(function() {
+    $('#switcher-default').addClass('selected');
+    $('#switcher').click(function(event) {
+        if ($(event.target).is('button')) {
+            let bodyClass = event.target.id.split('-')[1];
+            $('body').removeClass().addClass(bodyClass);
+            $('#switcher button').removeClass('selected');
+            $(event.target).addClass('selected');
+        }
+    });
+});
+*/
+
+$(document).ready(function() {
+    $('#switcher').hover(function() {
+        $(this).addClass('hover');
+    }, function() {
+        $(this).removeClass('hover');
+    });
+});
+
+
+// $(document).ready(function() {
+//     $('#switcher-default').addClass('selected');
+//     $('#switcher').click(function(event) {
+//         if ($(event.target).is('button')) {
+//             let bodyClass = event.target.id.split('-')[1];
+//             $('body').removeClass().addClass(bodyClass);
+//             $('#switcher button').removeClass('selected');
+//             $(event.target).addClass('selected');
+//         } else {
+//             $('#switcher button').toggleClass('hidden');
+//         }
+//     });
+// });
+
+
+$(document).ready(function() {
+    $('#switcher-default').addClass('selected');
+    $('#switcher').on('click', 'button', function(event) {
+        let bodyClass = event.target.id.split('-')[1];
+        $('body').removeClass().addClass(bodyClass);
+        $('#switcher button').removeClass('selected');
+        $(event.target).addClass('selected');
     });
 });
