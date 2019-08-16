@@ -33,11 +33,62 @@ $(document).ready(function() {
         }
         $speech.css('fontSize', num + 'px');
     });
-
+/*
     $('p').eq(1).hide();
     $('a.more').click(function () {
         event.preventDefault();
         $('p').eq(1).show();
         $(this).hide();
+    });
+*/
+/*
+    $('p').eq(1).hide();
+    $('a.more').click(function () {
+        event.preventDefault();
+        $('p').eq(1).show('slow');
+        $(this).hide();
+    });
+*/
+/*
+    $('p').eq(1).hide();
+    $('a.more').click(function () {
+        event.preventDefault();
+        $('p').eq(1).fadeIn('slow');
+        $(this).hide();
+    });
+*/
+    // $('p').eq(1).hide();
+    // $('a.more').click(function () {
+    //     event.preventDefault();
+    //     $('p').eq(1).slideDown('slow');
+    //     $(this).hide();
+    // });
+    // ---------------------切换可见性
+    // var $firstPara = $('p').eq(1);
+    // $firstPara.hide();
+    // $('a.more').click(function(event) {
+    //     event.preventDefault();
+    //     if ($firstPara.is(':hidden')) {
+    //         $firstPara.fadeIn('slow');
+    //         $(this).text('read less');
+    //     } else {
+    //         $firstPara.fadeOut('slow');
+    //         $(this).text('read more')
+    //     }
+    // });
+    // 使用slideToggle()
+    $(document).ready(function() {
+        var $firstPara = $('p').eq(1);
+        $firstPara.hide();
+        $('a.more').click(function(event) {
+            event.preventDefault();
+            $firstPara.slideToggle('slow');
+            var $link = $(this);
+            if ($link.text() == 'read more') {
+                $link.text('read less');
+            } else {
+                $link.text('read more');
+            }
+        })
     });
 });
