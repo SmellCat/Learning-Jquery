@@ -16,10 +16,10 @@
 //     });
 // });
 
-$(document).ready(function() {
+$(document).ready(function () {
     var $speech = $('div.speech');
     var defalutSize = $speech.css('fontSize');
-    $('#switcher button').click(function() {
+    $('#switcher button').click(function () {
         var num = parseFloat($speech.css('fontSize'));
         switch (this.id) {
             case 'switcher-large':
@@ -33,30 +33,30 @@ $(document).ready(function() {
         }
         $speech.css('fontSize', num + 'px');
     });
-/*
-    $('p').eq(1).hide();
-    $('a.more').click(function () {
-        event.preventDefault();
-        $('p').eq(1).show();
-        $(this).hide();
-    });
-*/
-/*
-    $('p').eq(1).hide();
-    $('a.more').click(function () {
-        event.preventDefault();
-        $('p').eq(1).show('slow');
-        $(this).hide();
-    });
-*/
-/*
-    $('p').eq(1).hide();
-    $('a.more').click(function () {
-        event.preventDefault();
-        $('p').eq(1).fadeIn('slow');
-        $(this).hide();
-    });
-*/
+    /*
+        $('p').eq(1).hide();
+        $('a.more').click(function () {
+            event.preventDefault();
+            $('p').eq(1).show();
+            $(this).hide();
+        });
+    */
+    /*
+        $('p').eq(1).hide();
+        $('a.more').click(function () {
+            event.preventDefault();
+            $('p').eq(1).show('slow');
+            $(this).hide();
+        });
+    */
+    /*
+        $('p').eq(1).hide();
+        $('a.more').click(function () {
+            event.preventDefault();
+            $('p').eq(1).fadeIn('slow');
+            $(this).hide();
+        });
+    */
     // $('p').eq(1).hide();
     // $('a.more').click(function () {
     //     event.preventDefault();
@@ -77,18 +77,53 @@ $(document).ready(function() {
     //     }
     // });
     // 使用slideToggle()
-    $(document).ready(function() {
+    // $(document).ready(function() {
+    //     var $firstPara = $('p').eq(1);
+    //     $firstPara.hide();
+    //     $('a.more').click(function(event) {
+    //         event.preventDefault();
+    //         $firstPara.slideToggle('slow');
+    //         var $link = $(this);
+    //         if ($link.text() == 'read more') {
+    //             $link.text('read less');
+    //         } else {
+    //             $link.text('read more');
+    //         }
+    //     })
+    // });
+
+    /* 4.4 创建自定义动画 */
+    // 4.4.1
+    // $(document).ready(function() {
+    //    var $firstPara = $('p').eq(1);
+    //    $firstPara.hide();
+    //    $('a.more').click(function(event) {
+    //        event.preventDefault();
+    //        $firstPara.animate({height: 'toggle'}, 'slow');
+    //        var $link = $(this);
+    //        if ($link.text() == 'read more') {
+    //            $link.text('read less');
+    //        } else {
+    //            $link.text('read more');
+    //        }
+    //    });
+    // });
+    // 4.4.2
+    $(document).ready(function () {
         var $firstPara = $('p').eq(1);
         $firstPara.hide();
-        $('a.more').click(function(event) {
+        $('a.more').click(function (event) {
             event.preventDefault();
-            $firstPara.slideToggle('slow');
+            $firstPara.animate({
+                opacity: 'toggle',
+                height: 'toggle'
+            }, 'slow');
             var $link = $(this);
             if ($link.text() == 'read more') {
                 $link.text('read less');
             } else {
                 $link.text('read more');
             }
-        })
+        });
     });
 });
