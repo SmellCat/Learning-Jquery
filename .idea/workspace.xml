@@ -6,10 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51d2964a-dbaa-43ca-9be8-0c43738c5d84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter_4/test/position.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter_4/04.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_4/04.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter_4/04.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_4/04.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter_4/test/position.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_4/test/position.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,12 +54,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter_4/test/position.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="154">
+              <caret line="7" column="127" selection-start-line="7" selection-start-column="127" selection-end-line="7" selection-end-column="127" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,6 +144,12 @@
               <item name="Learning Jquery" type="462c0819:PsiDirectoryNode" />
               <item name="Chapter_4" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Learning Jquery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Learning Jquery" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter_4" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -207,7 +211,7 @@
       <workItem from="1565963534839" duration="326000" />
       <workItem from="1565965167157" duration="2529000" />
       <workItem from="1566137876665" duration="1053000" />
-      <workItem from="1566222514249" duration="3719000" />
+      <workItem from="1566222514249" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="4.1&#10;4.2">
       <created>1565879427307</created>
@@ -220,12 +224,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56260000" />
+    <option name="totallyTimeSpent" value="56349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="84" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37277147" visible="true" weight="0.25372022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.37277147" visible="true" weight="0.25372022" />
       <window_info id="Structure" order="1" sideWeight="0.6272285" weight="0.17966281" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -236,7 +241,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" visible="true" weight="0.19210054" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" visible="true" weight="0.19210054" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -2487,12 +2492,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_4/test/position.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="154">
+          <caret line="7" column="127" selection-start-line="7" selection-start-column="127" selection-end-line="7" selection-end-column="127" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
